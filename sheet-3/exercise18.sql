@@ -1,0 +1,7 @@
+-- 18
+SELECT *
+FROM (
+    SELECT NAME, RANK() OVER (ORDER BY GEHALT DESC) ranking
+    FROM PERSONAL
+)
+WHERE ranking <= 3
