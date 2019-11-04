@@ -1,0 +1,8 @@
+-- 25
+DELETE
+FROM PERSONAL
+WHERE 
+    NAME LIKE '%Köster' OR
+    NAME LIKE '%Lambert';
+
+ROLLBACK;

@@ -1,0 +1,9 @@
+-- 27
+UPDATE
+    ARTIKEL
+SET 
+    PREIS = PREIS + 20,
+    NETTO = (PREIS + 20) / 1.19,
+    STEUER= (PREIS + 20) - ((PREIS + 20) / 1.19)
+WHERE
+    UPPER(BEZEICHNUNG) LIKE UPPER('%Rahmen%');
