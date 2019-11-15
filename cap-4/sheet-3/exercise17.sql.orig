@@ -1,0 +1,26 @@
+<<<<<<< HEAD:sheet-3/exercise17.sql
+-- 17
+SELECT DISTINCT * FROM
+(
+    SELECT TRIM(L.ORT)
+    FROM LIEFERANT L
+    UNION
+    SELECT TRIM(P.ORT)
+    FROM PERSONAL P
+    UNION
+    SELECT TRIM(K.ORT)
+    FROM KUNDE K
+=======
+-- 17
+SELECT DISTINCT * FROM
+(
+    SELECT L.ORT
+    FROM LIEFERANT L
+    UNION
+    SELECT P.ORT
+    FROM PERSONAL P
+    UNION
+    SELECT K.ORT
+    FROM KUNDE K
+>>>>>>> c78be71c96fb63a790213b17b651db8fa4f504bf:cap-4/sheet-3/exercise17.sql
+) x

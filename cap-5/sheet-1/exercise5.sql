@@ -1,0 +1,9 @@
+-- 5
+DROP VIEW VAuftragsposten;
+
+CREATE VIEW VAuftragsposten AS
+SELECT POSNR, AUFTRNR, ANZAHL, GESAMTPREIS, (GESAMTPREIS / ANZAHL) As EINZELPREIS
+FROM Auftragsposten;
+
+SELECT *
+FROM VAuftragsposten;
