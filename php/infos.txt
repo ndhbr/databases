@@ -1,0 +1,2 @@
+//zeus.oth-regensburg.de:1522/ora12c
+//localhost/xepdb1
